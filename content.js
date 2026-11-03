@@ -1,0 +1,183 @@
+/*
+  PORTFOLIO CONTENT — edit this file to update your site without touching HTML.
+  IMPORTANT: Project methods below are based on your CV and prior project descriptions.
+  Do not add performance metrics, code links, or deployment claims until verified.
+*/
+window.PORTFOLIO = {
+  person: {
+    name: 'Dr. Pritom Jyoti Bora',
+    shortName: 'Pritom J. Bora',
+    initials: 'PJB',
+    headline: 'Turning complex data into reliable predictions and practical AI solutions.',
+    roles: 'Data Scientist · AI/ML Researcher · Applied AI Engineer',
+    location: 'United Kingdom',
+    position: 'Senior Postdoctoral Research Associate · Loughborough University',
+    email: 'p.bora@lboro.ac.uk',
+    secondaryEmail: 'jyotipritom09@gmail.com',
+    githubUsername: '', // REPLACE with your real GitHub username to show GitHub buttons.
+    linkedInUrl: '',     // Optional full LinkedIn profile URL.
+    scholarUrl: 'https://scholar.google.co.in/citations?user=vCgaxQ4AAAAJ&hl=en&oi=ao',
+    cvUrl: 'assets/Pritom_Jyoti_Bora_Data_Science_CV.pdf',
+    intro: 'I work at the intersection of data science, machine learning, statistical modelling and engineering. My focus is on developing models that are not only accurate in analysis, but are also meaningful when tested on real-world problems.',
+    about: 'My career has taken me through research teams in the UK, Singapore, China and India. I have worked on predictive modelling, uncertainty-aware methods, real-time signal monitoring, image-based measurements and data-driven optimisation. I enjoy understanding a difficult problem, working with the data, selecting a sound method and validating the results before proposing a solution.',
+  },
+  stats: [
+    { value: '7+', label: 'Years of post-PhD research' },
+    { value: '45+', label: 'Research publications' },
+    { value: '1,000+', label: 'Research citations' },
+    { value: '4', label: 'Countries of research experience' },
+  ],
+  skills: [
+    { category: 'Programming & data', items: ['Python', 'R', 'SQL', 'MATLAB', 'C/C++', 'Pandas', 'NumPy', 'SciPy'] },
+    { category: 'Machine learning', items: ['PyTorch', 'TensorFlow', 'Scikit-learn', 'Keras', 'ANN / Deep Learning', 'SVM', 'ANFIS'] },
+    { category: 'Modelling & statistics', items: ['Gaussian Process Regression', 'Bayesian Inference', 'Bayesian Optimisation', 'PGNN / PINN', 'Regression & Classification', 'Uncertainty Analysis'] },
+    { category: 'Analytics & tools', items: ['Feature Engineering', 'Data Quality', 'Image Processing', 'Time-Series Analysis', 'Power BI', 'Tableau', 'Jupyter'] },
+    { category: 'Cloud & applied systems', items: ['AWS SageMaker', 'Google Vertex AI', 'Azure ML', 'Real-Time Monitoring', 'Signal Processing', 'Software–Hardware Integration'] },
+  ],
+  projects: [
+    {
+      id: 'pgnn',
+      title: 'Physics-Guided Neural Networks for Broadband Dielectric Prediction',
+      shortTitle: 'Broadband Dielectric Prediction · PGNN',
+      category: 'Machine Learning',
+      categoryClass: 'ml',
+      status: 'Research case study',
+      priority: true,
+      year: '2025–2026',
+      tags: ['PyTorch', 'Physics-Guided ML', 'Regression', 'Validation'],
+      summary: 'A hybrid neural-network approach to reconstruct broadband complex permittivity from a limited measured frequency range.',
+      problem: 'Broadband dielectric characterisation can require extensive measurements. The research asks whether a model trained with limited-frequency measurements can predict physically meaningful response over a wider frequency range.',
+      approach: 'Measured epoxy–MWCNT dielectric data in the 8.2–12.4 GHz X-band are used to inform a neural network. The model estimates parameters of a Cole–Cole-plus-conductivity representation, reconstructs the dielectric response over 1–40 GHz, and examines implications for reflection-loss prediction.',
+      evidence: 'Experimental comparison includes Ku-band reflection-loss testing. The work has been developed as a research manuscript; model benchmarking and final publication details should be linked after public release.',
+      note: 'Research details are summarised here; training data, source code and final evaluation figures are not yet publicly linked.',
+      links: [],
+      art: 'waves'
+    },
+    {
+      id: 'gpr',
+      title: 'Gaussian Process Regression & Data-Driven Materials Optimisation',
+      shortTitle: 'GPR & Predictive Optimisation',
+      category: 'Machine Learning',
+      categoryClass: 'ml',
+      status: 'Published research area',
+      priority: true,
+      year: '2021–2024',
+      tags: ['GPR', 'Bayesian Methods', 'Optimisation', 'Python'],
+      summary: 'Data-driven modelling of material performance, including predictive approaches to property estimation and optimisation.',
+      problem: 'Complex material systems have interdependent inputs and non-linear responses, making experimental design and optimisation costly.',
+      approach: 'Study data-driven relationships between composition, material properties and electromagnetic response; use statistical and machine-learning methods, including Gaussian-process approaches within the wider research programme, to support prediction and design decisions.',
+      evidence: 'Related data-driven materials research is published in peer-reviewed journals. Individual repository code and model-by-model benchmarks can be added after verification.',
+      note: 'The linked paper supports the broader data-driven optimisation work; it should not be interpreted as evidence that every method listed was used in that paper.',
+      links: [{ label: 'Related publication', url: 'https://doi.org/10.1002/adem.202301518' }],
+      art: 'contours'
+    },
+    {
+      id: 'mrt',
+      title: 'Real-Time Signal Analytics & ML Monitoring in an MRT Environment',
+      shortTitle: 'Real-Time ML Signal Monitoring',
+      category: 'Applied Systems',
+      categoryClass: 'systems',
+      status: 'Applied research',
+      priority: true,
+      year: '2020–2021',
+      tags: ['Signal Classification', 'Real-Time Data', 'ML', 'System Integration'],
+      summary: 'Machine-learning-based signal classification and software–hardware integration for practical monitoring in Singapore’s metro environment.',
+      problem: 'Signal monitoring in operational environments requires methods that can interpret changing signal measurements and present useful information in a timely way.',
+      approach: 'Worked on signal processing and ML classification integrated with monitoring tools and hardware–software workflows during a research appointment at Nanyang Technological University, Singapore.',
+      evidence: 'Experience with real-time applied monitoring and system integration. Detailed architectures, operational data and repository links are not currently public.',
+      note: 'This project description deliberately excludes proprietary datasets and unverified deployment metrics.',
+      links: [],
+      art: 'signals'
+    },
+    {
+      id: 'vision',
+      title: 'Image Segmentation & Automated Pattern Quality Analysis',
+      shortTitle: 'Computer Vision for Pattern Inspection',
+      category: 'Computer Vision',
+      categoryClass: 'vision',
+      status: 'Research workflow',
+      priority: false,
+      year: '2025–2026',
+      tags: ['Image Processing', 'Segmentation', 'Quantitative Analysis', 'Python'],
+      summary: 'Image-based measurements of patterned transparent conductive films, including mask-to-pattern transfer and linewidth accuracy.',
+      problem: 'Comparing fabricated patterns with design masks requires consistent image analysis rather than purely visual inspection.',
+      approach: 'Use segmentation and image-processing measurements to quantify the mask-to-pattern transfer (MTPT), linewidth variations and pattern fidelity across sample types and etching approaches.',
+      evidence: 'Applied to ongoing transparent-conductor patterning and biogel-lithography research. The website will link representative figures and code when cleared for public release.',
+      note: 'The segmentation workflow is described at a high level; no benchmark accuracy or annotated dataset has been claimed.',
+      links: [],
+      art: 'segmentation'
+    },
+    {
+      id: 'anomaly',
+      title: 'Anomaly Detection for Smart Water-Pump Monitoring',
+      shortTitle: 'Smart Pump Anomaly Detection',
+      category: 'Applied Systems',
+      categoryClass: 'systems',
+      status: 'Collaborative project · details to add',
+      priority: false,
+      year: 'Project overview',
+      tags: ['Isolation Forest', 'Sensor Data', 'Anomaly Detection', 'Python'],
+      summary: 'Exploration of sensor-based anomaly detection for monitoring unusual operating conditions in smart water-pump systems.',
+      problem: 'Sensor data can reveal departures from normal equipment operation, but practical detection methods must distinguish meaningful events from routine variability.',
+      approach: 'Worked with pressure, vibration and energy-related sensor signals in the context of anomaly detection; Isolation Forest formed part of the project discussion. Detailed validation choices are to be documented.',
+      evidence: 'A project outline is available; reproducible results, datasets and public code have not yet been supplied for publication.',
+      note: 'No claims about production deployment, detection precision or client outcomes are made here.',
+      links: [],
+      art: 'anomaly'
+    },
+    {
+      id: 'stock',
+      title: 'White Hello — Stock-Market Forecasting',
+      shortTitle: 'Stock-Market Forecasting',
+      category: 'Time Series',
+      categoryClass: 'timeseries',
+      status: 'Portfolio draft · details to confirm',
+      priority: false,
+      year: 'Project overview',
+      tags: ['Time Series', 'Forecasting', 'Model Evaluation', 'Python'],
+      summary: 'A time-series forecasting project focused on understanding stock-price dynamics and evaluating predictive methods.',
+      problem: 'Financial time series are noisy and non-stationary, making reliable out-of-sample prediction difficult.',
+      approach: 'Investigate forecasting models and validation strategies for stock-market data. Exact dataset, methods, forecast horizon and results will be documented once the project material is available.',
+      evidence: 'No performance numbers, successful trading outcomes or live forecasting claims are currently presented.',
+      note: '“White Hello” is retained as the working project name you supplied. Rename this project in content.js if that name needs correction.',
+      links: [],
+      art: 'stocks'
+    },
+    {
+      id: 'absorber',
+      title: 'Multi-Variable Optimisation of Microwave Absorber Performance',
+      shortTitle: 'Data-Driven Absorber Optimisation',
+      category: 'Machine Learning',
+      categoryClass: 'ml',
+      status: 'Published research',
+      priority: false,
+      year: '2021–2024',
+      tags: ['Predictive Modelling', 'Optimisation', 'Material Data', 'Regression'],
+      summary: 'Optimising composite formulation and design variables through data-driven models of electromagnetic absorption.',
+      problem: 'Absorption performance depends jointly on composition, frequency, material parameters and thickness.',
+      approach: 'Combine experimental electromagnetic data with predictive and optimisation methods to explore composition–property–performance relationships and identify promising design combinations.',
+      evidence: 'Related peer-reviewed work includes published data-driven studies of nanocomposite microwave absorbers.',
+      note: 'The publication link is a research source; complete reusable code and raw datasets are not yet public.',
+      links: [{ label: 'Read published paper', url: 'https://doi.org/10.1021/acsaelm.1c00693' }],
+      art: 'contours'
+    }
+  ],
+  experience: [
+    { role: 'Senior Postdoctoral Research Associate', organisation: 'Loughborough University', place: 'UK', dates: 'Apr 2025 — Present', detail: 'Applied research spanning data-driven modelling, advanced materials and measurement-led validation.' },
+    { role: 'Senior Research & Teaching Fellow', organisation: 'Singapore University of Technology and Design', place: 'Singapore', dates: 'Sep 2022 — Mar 2025', detail: 'AI/ML and data-driven optimisation research; jointly taught Data Analytics to approximately 90 students and supervised industry-oriented projects.' },
+    { role: 'Research Scientist', organisation: 'National University of Singapore', place: 'Singapore', dates: 'Jul 2021 — Aug 2022', detail: 'Computational and data-driven methods for engineering problems.' },
+    { role: 'Research Fellow', organisation: 'Nanyang Technological University', place: 'Singapore', dates: 'Mar 2020 — Jun 2021', detail: 'Machine learning, signal classification, real-time monitoring and software–hardware integration.' },
+    { role: 'Postdoctoral Fellow', organisation: 'Guangdong Technion–Israel Institute of Technology', place: 'China', dates: 'Mar 2019 — Feb 2020', detail: 'Research in quantitative engineering methods and data-driven discovery.' }
+  ],
+  education: [
+    { degree: 'PhD', programme: 'Engineering / electromagnetic materials', school: 'Indian Institute of Science (IISc), Bengaluru', year: '2019' },
+    { degree: 'MSc', programme: 'Nanoscience & Technology', school: 'Tezpur University', year: '2013' },
+    { degree: 'BSc', programme: 'Physics', school: 'Jorhat Institute of Science and Technology', year: '2011' }
+  ],
+  publications: [
+    { title: 'Revolutionizing Electromagnetic Materials: Machine Learning Enabled Optimization of Polymer Nanocomposites for Enhanced Performance', venue: 'Advanced Engineering Materials · 2024', url: 'https://doi.org/10.1002/adem.202301518' },
+    { title: 'Exploring Robust Microwave Absorption Properties of Functional Polyvinyl Butyral via Facile Cross-linking and Data-Driven Material Discovery', venue: 'Applied Materials Today · 2024', url: 'https://doi.org/10.1016/j.apmt.2024.102337' },
+    { title: 'Optimization of Polyaniline Nanofiber Loading in Polymer Matrix for Strong Microwave Absorption Using Materials Data-Driven Discovery', venue: 'Composites Communications · 2022', url: 'https://doi.org/10.1016/j.coco.2022.101289' },
+    { title: 'Electromagnetic Data-Driven Approach to Realize the Best Microwave Absorption Characteristics of MXene-Based Nanocomposites', venue: 'ACS Applied Electronic Materials · 2021', url: 'https://doi.org/10.1021/acsaelm.1c00693' }
+  ]
+};
